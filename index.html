@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Big Library</h1>
+    <button id="addBook" type="submit">New Book</button>
+    <div id="book-display">
+      <h2>Books in the library</h2>
+      <ul id="bookList"></ul>
+    </div>
+
+    <div class="container">
+      <form id="bookForm" method="post" style="display: none">
+        <legend>Add a book to the Big Library</legend>
+        <label>
+          Book title:
+          <input name="book-title" />
+        </label>
+        <label>
+          Book author:
+          <input name="book-author" />
+        </label>
+        <label>
+          Book pages:
+          <input name="book-pages" />
+        </label>
+        <label>
+          Has it been read?:
+          <select name="book-isRead">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </label>
+        <button id="submit-button" type="submit">Add the book!</button>
+      </form>
+    </div>
+  </body>
+</html>
